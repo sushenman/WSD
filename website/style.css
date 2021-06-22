@@ -8,6 +8,7 @@ nav{
   padding-left: 5px;
   flex-wrap: wrap;
 
+
 }
 .nav-1 a,.nav-2 a,.nav-3 a,.nav-4 a, .nav-5 a{
   text-decoration: none;
@@ -15,7 +16,7 @@ nav{
 
 nav div{
   font-family: "Rubik",sans-serif;
-  padding: 20px;
+  padding: 20px ;
 
 }
 .image{
@@ -25,6 +26,7 @@ nav div{
   position: absolute;
   right: 1%;
   border: none;
+
   font-size: 20px;
 }
 
@@ -134,4 +136,40 @@ footer{
 }
 .last p{
   text-align: center;
+}
+
+
+                              /*  About us css*/
+
+.about{
+;
+  width: 550px;
+
+  margin-left: 450px;
+}
+.aboutus h1{
+  color: white;
+  position: relative;
+  bottom: 80px;
+  font-family: serif;
+}
+.about p{
+  font-size: 20px;
+  text-align: left;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px #ccc solid;
+  margin: 60px auto;
+  grid-gap: 4em;
+  justify-items: space-around;
+
+}
+.grid div{
+
+  text-align: center;
+}
+.about1, .about2, .about3{
+
 }
