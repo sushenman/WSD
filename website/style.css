@@ -80,20 +80,7 @@ nav div{
   margin-bottom: 10px;
 
 }
-footer{
-  background-color: aqua;
-}
-.logo{
-  display: flex;
-}
-.contact{
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 50px;
-  font-size: 17px;
 
-}
 .letter{
   display: flex;
   height: 100px;
@@ -137,7 +124,20 @@ footer{
 .last p{
   text-align: center;
 }
+footer{
+  background-color: aqua;
+}
+.logo{
+  display: flex;
+}
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 50px;
+  font-size: 17px;
 
+}
 
                               /*  About us css*/
 
@@ -160,16 +160,18 @@ footer{
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 2px #ccc solid;
-  margin: 60px auto;
-  grid-gap: 4em;
+
+  margin-top: 40px ;
+  grid-gap: 2em;
   justify-items: space-around;
+
 
 }
 .grid div{
 
   text-align: center;
 }
-.about1, .about2, .about3{
-
+.grid1 a,.grid2 a,.grid3 a,.grid4 a{
+  color: black;
+}
 }
