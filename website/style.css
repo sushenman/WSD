@@ -29,6 +29,7 @@ nav{
 }
 .navbar{
 display: flex;
+flex-wrap: wrap;
 
 }
 .navbar p{
@@ -139,7 +140,7 @@ nav div{
   text-align: center;
 }
                               /*  About us css*/
-.top{
+.top {
   filter:brightness(50%);
 }
 .about{
@@ -150,6 +151,7 @@ nav div{
 .aboutus h1{
   color: white;
   font-family: serif;
+  font-size: 70px;
 }
 .about p{
   font-size: 20px;
@@ -175,17 +177,14 @@ nav div{
 
             /*  Contact
             */
-.contactconta{
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 
+.contactpage{
+  background-color: #fff;
 }
-
 .formgrp{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .formgrp [type=text]
@@ -213,14 +212,20 @@ nav div{
       width:550px;
       border-style:outset;
 }
-.address{
+.address, .landline,.mail{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 1%;
+}
+.address img,.landline img,.mail img{
+  width: 10ch;
+    height:10ch; 
 
 }
-.address img{
-  height: 7%;
+.contact-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
                                         /*
                                     Location css
@@ -337,4 +342,7 @@ flex-direction: column;
 }
 .mid a{
   color: white;
+}
+.logo a{
+  color: #fff;
 }
