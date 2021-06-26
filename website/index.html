@@ -79,12 +79,16 @@
     Subscribe newsletter to get offers and about new places to discover.
     </div>
     <div class="subscribe" style="display: flex; align-content: center">
+      
     <div class="inputtxt">
+     
       <input type="text" name="Search" placeholder="your mail">
+    
     </div>
     <div class="button">
-      <button  name="button"> Subscribe</button>
+      <button  name="button" onclick="myFunction()"> Subscribe</button>
     </div>
+  </form>
   </div>
   </div>
   <div class="last">
@@ -142,5 +146,19 @@
 
 </div>
 </footer>
+<script>
+  function validatebutton(){
+    let x = document.inputtxt["Search"].value;
+    if (x == ""){
+      alert("Please fill in the mail");
+      return false;
+    }else{
+      alert("Thankyou for subscribing");
+    }
+  }
+  function myFunction(){
+      alert("Thank you for subscribing")
+  }
+</script>
   </body>
 </html>

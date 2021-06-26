@@ -180,37 +180,45 @@ nav div{
 
 .contactpage{
   background-color: #fff;
+  
 }
 .formgrp{
+  min-height: 10vh;
+
+}
+.contactpage h1{
+text-align: center;
+}
+ .formname{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+  padding-bottom:4ch;
+  justify-content: center;
 
-.formgrp [type=text]
-{
-  margin: 10px;
+}
+.formname input{
+  padding: 4px;
+  width:50ch ;
+  height: 5ch;
+}
+.formname textarea{
   padding: 10px;
-  width: 248px;
-  border: 1px solid;
-
+  width: 56ch;
+  height: 20ch;
+  align-items: center;
 }
-.formgrp textarea
-{
-
-    margin: 10px;
-    padding: 10px;
-    width:550px;
-    border-style:outset;
-
+#errormsg{
+  transition: all 1s ease;
 }
-.formgrp [type=submit]{
-
-      margin: 10px;
-      margin-left: 20px;
-      padding: 10px;
-      width:550px;
-      border-style:outset;
+.formname small{
+  visibility: collapse;
+}
+.formname [type= submit]{
+  border-radius: 2px;;
+  background-color: green;
+  border: 1px hidden;
+  width: 28%;
+  display: block;
+ 
 }
 .address, .landline,.mail{
   display: flex;
@@ -223,6 +231,7 @@ nav div{
 
 }
 .contact-container{
+  margin-top: 5em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

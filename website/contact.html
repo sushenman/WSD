@@ -28,14 +28,25 @@
 
   </nav>
   <div class="contactpage">  
-      Get in touch
-<div class="formgrp">
-    <form  action="" method="post">
-        <input type="text" name="Firstname" placeholder="Name">
-        <input type="text" name="email" placeholder="email"><br>
-        <textarea name="message" rows="10" cols="50" placeholder="Message"></textarea><br>
-        <input type="submit" name="button" value="Submit">
-    </form>
+      <h1>Get in touch with us</h1>
+     
+
+ 
+     <form name="myform" id="form" onsubmit="return validation()">
+    
+      <input type="text" name="Name" placeholder="Name">
+    
+      <input type="text" name="Email" placeholder="hello@nice.com">
+      
+      
+   
+      <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
+    
+          <input type="submit"  value="Send" name="submit">
+     
+    
+      </form>
+</div>
 </div>
 <div class="contact-container">
     <div class="address">
@@ -47,6 +58,7 @@
     <div class="mail">
       <img src="images/mail.png" alt=""> mail@google.com
     </div>
+</div>
 </div>
 </div>
   <footer>
@@ -79,5 +91,8 @@
 
   </div>
   </footer>
+  <script src="contact.js"></script>
 </body>
+
+
 </html>
