@@ -6,6 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.button'),
+      
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');    
+  });
+ 
+  loader.addEventListener('animationend', function() {
+    check.classList.add('active'); 
+  });
+});
+
+  </script>
 </head>
 <body>
 
@@ -16,35 +30,59 @@
 
   </div>
 
+
   <nav>
-  <div class="navbar">
+    <div class="navbar">
+    <div class="box">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+    </div>
+    <div class="box">
+      <li>
+        <a href="about.html">About</a>
+      </li>
+    </div>
+    <div class="box">
+      <li>
+        <a href="Location.html">Location</a>     
+      </li>
+    </div>
+    <div class="box">
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </div>
+    <div class="box">
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+    </div>
+    </div>
 
-    <p> <a href="index.html"> Home</a></p>
-    <p><a href="about.html">About</a></p>
-    <p><a href="location.html">Location</a></p>
-    <p><a href="#">Contact</a></p>
-    <p><a href="blog.html">Blog</a></p>
-  </div>
-
-  </nav>
+</nav>
   <div class="contactpage">  
       <h1>Get in touch with us</h1>
-     
-
+      <div id="errormsg">
+<div class="formgrp">
  
      <form name="myform" id="form" onsubmit="return validation()">
-    
+    <div class="formname">
       <input type="text" name="Name" placeholder="Name">
     
+    </div>  
+    <div class="formname">
       <input type="text" name="Email" placeholder="hello@nice.com">
       
       
-   
+    </div>  
+    <div class="formname">
       <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
-    
-          <input type="submit"  value="Send" name="submit">
-     
-    
+    </div>  
+    <div class="formname">
+        <button class="button">Send</button>
+     </div>
+    </div>
       </form>
 </div>
 </div>
@@ -73,9 +111,9 @@
   <hr>
   <div class="mid">
     <p>Useful Links</p>
-    <p><a href="#">About Us</a></p>
-    <p><a href="#">Location</a></p>
-    <p><a href="#">Contact</a></p>
+    <p><a href="about.html">About Us</a></p>
+    <p><a href="Location.html">Location</a></p>
+    <p><a href="contact.html">Contact</a></p>
 
   </div>
   <hr>
@@ -91,8 +129,7 @@
 
   </div>
   </footer>
-  <script src="contact.js"></script>
 </body>
-
+<script src="contact.js"></script>
 
 </html>

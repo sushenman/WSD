@@ -23,34 +23,49 @@ body{
 }
 nav{
   display: flex;
-  padding-top:10px;
-  padding-bottom: 10px;
+  
   background-color: #656565;
+  
+
 }
 .navbar{
 display: flex;
 flex-wrap: wrap;
+margin: 0%;
+padding: 0%;
+
 
 }
-.navbar p{
+.navbar {
   padding-left: 70px;
+  
 
 }
-
 .navbar a{
   color: white;
    text-decoration: none;
    font-size: 20px;
+   display: block;
+   padding: 28px 20px ;
 }
+ 
+ .box :hover{
+   background-color: white;
+ }
 
+.navbar li{
+  list-style-type: none;
+  display: block;
+  
+}
 nav div{
   font-family: "Rubik",sans-serif;
-
+ 
 }
 
 .navbar a:hover{
-  color: orange;
-
+  color: black;
+  
 }
 
 .popular,.p1 div{
@@ -212,14 +227,25 @@ text-align: center;
 .formname small{
   visibility: collapse;
 }
-.formname [type= submit]{
-  border-radius: 2px;;
-  background-color: green;
-  border: 1px hidden;
-  width: 28%;
-  display: block;
- 
+.formname button{
+  
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
 }
+.formname button:hover{
+
+  box-shadow: 2px 4px black;
+  background-color: white;
+  color: red;
+}
+  
+
 .address, .landline,.mail{
   display: flex;
   flex-direction: column;
