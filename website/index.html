@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Ntrav</title>
     <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
   </head>
   <body>
     <div class="call">
@@ -12,44 +13,44 @@
   <img src="images/mail.png" alt="">mail@google.com
 
 </div>
+<div class="navbar">
+  <a href="#">
+    <div class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </a>
+  <div class="box">
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
 
-    <nav>
-          <div class="navbar">
-          <div class="box">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-          </div>
-          <div class="box">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </div>
-          <div class="box">
-            <li>
-              <a href="Location.html">Location</a>     
-            </li>
-          </div>
-          <div class="box">
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </div>
-          <div class="box">
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-          </div>
-          </div>
+      <li>
+        <a href="Location.html">Location</a>
+      </li>
 
-      </nav>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
       <img src="images/12.jpg" alt="travel"style="width:100%">
       <div class="popular">
         <h1>Popular Destination</h1>
 
         <div class="p1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> sed do eiusmod tempor incididunt ut labore et dolore magna
+          Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.
         </div>
       </div>
 
@@ -101,11 +102,11 @@
       
     <div class="inputtxt">
      
-      <input type="text" name="Search" placeholder="your mail">
+      <input type="text" id =mail name="Search" placeholder="your mail">
     
     </div>
     <div class="button">
-      <button  name="button" onsubmit="return validatebutton()"> Subscribe</button>
+      <button  id="button" onclick="return validatebutton()"> Subscribe</button>
     </div>
   </form>
   </div>
@@ -167,14 +168,12 @@
 </footer>
 <script>
   function validatebutton(){
-    let x = document.getElementsByClassName["button"]["button"].value;
-    if (x == ""){
-      alert("Please fill in the mail");
-      return false;
-    }else{
-      alert("Thankyou for subscribing");
+    var button = document.getElementsByClassName('button');
+    var mail = document.getElementsByClassName('mail');
+    if(mail == ""){
+      window.alert("Please enter a valid email")
     }
   }
-</script>
+  </script>
   </body>
 </html>

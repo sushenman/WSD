@@ -21,27 +21,16 @@ body{
 .call img{
   height: 20px;
 }
-nav{
-  display: flex;
-  
-  background-color: #656565;
-  
 
-}
+  
 .navbar{
 display: flex;
 flex-wrap: wrap;
 margin: 0%;
-padding: 0%;
-
-
+padding-left: 7%;
+background-color: #656565;
 }
-.navbar {
-  padding-left: 70px;
-  
-
-}
-.navbar a{
+.box a{
   color: white;
    text-decoration: none;
    font-size: 20px;
@@ -49,23 +38,38 @@ padding: 0%;
    padding: 28px 20px ;
 }
  
- .box :hover{
+ .box li:hover{
    background-color: white;
+   padding: 0%;
  }
 
-.navbar li{
-  list-style-type: none;
-  display: block;
+.box ul{
+ 
+  display: flex;
   
 }
-nav div{
-  font-family: "Rubik",sans-serif;
- 
+.box li{
+  list-style-type: none;
+}
+.box a:hover{
+  color: black;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-.navbar a:hover{
-  color: black;
-  
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .popular,.p1 div{
@@ -140,9 +144,13 @@ nav div{
   .photos{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
   }
 .last{
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .last h1{
   font-weight: bold;
@@ -199,9 +207,10 @@ nav div{
 }
 .formgrp{
   min-height: 10vh;
+  text-align: center;
 
 }
-.contactpage h1{
+.contactpage {
 text-align: center;
 }
  .formname{
@@ -221,13 +230,16 @@ text-align: center;
   height: 20ch;
   align-items: center;
 }
-#errormsg{
+.formname #errormsg{
+  padding: 12px;
   transition: all 1s ease;
+  visibility: visible;
+  background-color: red;
+  width:50ch;
+  color: blue;
+
 }
-.formname small{
-  visibility: collapse;
-}
-.formname button{
+.formname [type = submit]{
   
   border-radius: 18px;
   background-color: #1c89ff;
@@ -238,7 +250,7 @@ text-align: center;
   cursor: pointer;
   transition: all .1s ease-in-out;
 }
-.formname button:hover{
+.formname [type=submit]:hover{
 
   box-shadow: 2px 4px black;
   background-color: white;
@@ -309,6 +321,11 @@ color: black;
                               */
 
 
+
+.top{
+ text-align: center;
+
+}
 .top h1{
   text-align: center;
 }
@@ -316,6 +333,12 @@ color: black;
   display: flex;
   justify-content: center;
   margin: 10px 25px;
+}
+.top hr{
+  width: 5%;
+  border: 4px greenyellow solid;
+  border-radius: 2px;
+
 }
 
 .first{
@@ -381,3 +404,42 @@ flex-direction: column;
 .logo a{
   color: #fff;
 }
+
+
+
+@media (max-width: 800px) {
+  .box {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .box {
+      display: none;
+      width: 100%;
+  }
+
+  .box ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .box ul li {
+      text-align: center;
+  }
+
+  .box ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .box.active {
+      display: flex;
+  }
+}
+
+
+
+

@@ -1,135 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  var btn = document.querySelector('.button'),
-      
-  btn.addEventListener('click', function () {
-    loader.classList.add('active');    
-  });
- 
-  loader.addEventListener('animationend', function() {
-    check.classList.add('active'); 
-  });
-});
-
-  </script>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="contact.js" defer></script>
+  </head>
+  <body>
     <div class="call">
-      <img src="images/call.png" alt="">
+      <img src="images/call.png" alt="" />
       + 977 980110042&nbsp;&nbsp;
-  <img src="images/mail.png" alt="">  mail@google.com
+      <img src="images/mail.png" alt="" /> mail@google.com
+    </div>
 
-  </div>
-
-
-  <nav>
     <div class="navbar">
-    <div class="box">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-    </div>
-    <div class="box">
-      <li>
-        <a href="about.html">About</a>
-      </li>
-    </div>
-    <div class="box">
-      <li>
-        <a href="Location.html">Location</a>     
-      </li>
-    </div>
-    <div class="box">
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-    </div>
-    <div class="box">
-      <li>
-        <a href="blog.html">Blog</a>
-      </li>
-    </div>
+      <a href="#">
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </a>
+      <div class="box">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="Location.html">Location</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-</nav>
-  <div class="contactpage">  
+    <div class="contactpage">
       <h1>Get in touch with us</h1>
-      <div id="errormsg">
-<div class="formgrp">
- 
-     <form name="myform" id="form" onsubmit="return validation()">
-    <div class="formname">
-      <input type="text" name="Name" placeholder="Name">
-    
-    </div>  
-    <div class="formname">
-      <input type="text" name="Email" placeholder="hello@nice.com">
-      
-      
-    </div>  
-    <div class="formname">
-      <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
-    </div>  
-    <div class="formname">
-        <button class="button">Send</button>
-     </div>
+      <div class="formgrp">
+        <div class="formname">
+        
+        </div>
+
+        <form id="form" onsubmit="return validation()">
+          <div class="formname">
+            <input type="text" name="Name" placeholder="Name" id="Name" />
+          </div>
+          <div class="formname">
+            <input
+              type="text"
+              name="Email"
+              placeholder="hello@nice.com"
+              id="Email"
+            />
+          </div>
+          <div class="formname">
+            <textarea
+              name="Message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="formname">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
     </div>
-      </form>
-</div>
-</div>
-<div class="contact-container">
-    <div class="address">
-      <img src="images/home.png" alt="images"> Pokhara, Nepal
+    <div class="contact-container">
+      <div class="address">
+        <img src="images/home.png" alt="images" /> Pokhara, Nepal
+      </div>
+      <div class="landline">
+        <img src="images/landline.png" alt="" /> +977 980110042
+      </div>
+      <div class="mail">
+        <img src="images/mail.png" alt="" /> mail@google.com
+      </div>
     </div>
-    <div class="landline">
-      <img src="images/landline.png" alt=""> +977 980110042
-    </div>
-    <div class="mail">
-      <img src="images/mail.png" alt=""> mail@google.com
-    </div>
-</div>
-</div>
-</div>
-  <footer>
-    <div class="end">
 
-  <div class="logo">
-    <p>Let's be Social</p>
-  <a href="#"> Facebook</a>
-  <a href="#"> Instagram</a>
-  <a href="#"> Twitter</a>
-  </div>
-  <hr>
-  <div class="mid">
-    <p>Useful Links</p>
-    <p><a href="about.html">About Us</a></p>
-    <p><a href="Location.html">Location</a></p>
-    <p><a href="contact.html">Contact</a></p>
+    <footer>
+      <div class="end">
+        <div class="logo">
+          <p>Let's be Social</p>
+          <a href="#"> Facebook</a>
+          <a href="#"> Instagram</a>
+          <a href="#"> Twitter</a>
+        </div>
+        <hr />
+        <div class="mid">
+          <p>Useful Links</p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="Location.html">Location</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <hr />
+        <div class="contact">
+          <p>Contact us <br />+977 980110042 <br />mail@google.com</p>
+        </div>
+      </div>
 
-  </div>
-  <hr>
-  <div class="contact">
-    <p>Contact us
-    <br>+977 980110042
-  <br>mail@google.com</p>
-  </div>
-  </div>
+      <div class="copyright">
+        <h5>&copy2021- All right reserved</h5>
+      </div>
+    </footer>
 
-  <div class="copyright">
-  <h5> &copy2021- All right reserved</h5>
 
-  </div>
-  </footer>
-</body>
-<script src="contact.js"></script>
-
+  </body>
 </html>
