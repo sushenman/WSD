@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 *{
   box-sizing: border-box;
 
@@ -23,12 +26,16 @@ body{
 }
 
   
-.navbar{
+.box{
 display: flex;
-flex-wrap: wrap;
+
 margin: 0%;
-padding-left: 7%;
+
 background-color: #656565;
+}
+.box img{
+ 
+  padding: 20px; ;
 }
 .box a{
   color: white;
@@ -47,12 +54,14 @@ background-color: #656565;
  
   display: flex;
   
+  
 }
 .box li{
   list-style-type: none;
 }
 .box a:hover{
   color: black;
+  
 }
 .toggle-button {
     position: absolute;
@@ -73,7 +82,7 @@ background-color: #656565;
 }
 
 .popular,.p1 div{
-  font-family: sans-serif;
+  font-family: 'PT Serif', serif;
   text-align: center;
   margin: 10px;
 }
@@ -153,9 +162,10 @@ background-color: #656565;
   flex-wrap: wrap;
 }
 .last h1{
+  font-family: 'PT Serif', serif;
   font-weight: bold;
   font-style: oblique;
-  font-family: sans-serif;
+
   margin-bottom: 10px;
   text-align: center;
 }
@@ -197,7 +207,30 @@ background-color: #656565;
 .grid1 a,.grid2 a,.grid3 a,.grid4 a{
   color: black;
 }
+.grid1 img:hover{
+  border-right: 4px solid #ccc;
 
+  border-bottom:4px solid #ccc;
+  filter: brightness(60%);
+}
+.grid2 img:hover{
+  border-right: 4px solid #ccc;
+
+  border-bottom:4px solid #ccc;
+  filter: brightness(60%);
+}
+.grid3 img:hover{
+  border-right: 4px solid #ccc;
+
+  border-bottom:4px solid #ccc;
+  filter: brightness(60%);
+}
+.grid4 img:hover{
+  border-right: 4px solid #ccc;
+
+  border-bottom:4px solid #ccc;
+  filter: brightness(60%);
+}
             /*  Contact
             */
 
@@ -298,7 +331,7 @@ text-align: center;
 
   grid-template-columns: 1fr 1fr 1fr;
 
-  grid-gap: 1em;
+  grid-gap: 2em;
 font-family: serif;
 
 
