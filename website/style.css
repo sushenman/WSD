@@ -24,12 +24,7 @@ body{
 .call img{
   height: 20px;
 }
-.navbar{
 
-  position: sticky;
-  top: 0%;
-}
-  
 .box{
 display: flex;
 
