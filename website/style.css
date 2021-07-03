@@ -24,7 +24,11 @@ body{
 .call img{
   height: 20px;
 }
+.navbar{
 
+  position: sticky;
+  top: 0%;
+}
   
 .box{
 display: flex;
@@ -35,14 +39,14 @@ background-color: #656565;
 }
 .box img{
  
-  padding: 20px; ;
+  padding: 15px 20px;  
 }
 .box a{
   color: white;
    text-decoration: none;
    font-size: 20px;
    display: block;
-   padding: 28px 20px ;
+   padding: 28px  ;
 }
  
  .box li:hover{
